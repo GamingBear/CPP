@@ -1,15 +1,16 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <math.h>
+int main()
+{
+     int broj;
 
-int main(){
+    printf("\nUnesi cijeli broj: ");
+    scanf("%d", &broj);
 
-    int d;
-
-    printf("Unesi promjer kotaca:\n");
-    scanf("%d", &d);
-
-    float opseg=d*3.1356;
-
-    printf("Napravi %.0f okretaja", 400000/opseg);
-
+    if(broj % 2 == 1)
+        printf("\nBroj je neparan");
+       if(broj % 2 == 0)
+        printf("\nBroj je paran");
+    return 0;
 }
