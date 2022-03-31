@@ -1,22 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <math.h>
 int main()
 {
+    int sum=0,i=10, n;
+    while(i){
+    scanf("%d",&n);
+    sum+=n;
+    i--;
+}
+printf("ukupno: %d\n",sum);
+printf("prosjecno: %f",(float)sum/10);
 
-    int n, i, fac=1, br=0;
 
-    do{
-    printf("Unesi broj\n");
-    scanf("%d", &n);
-    if(n<0){printf("Error\n");
-    if(br>5) printf("Unesi pozitivan %d\n",br);
-    }
-    br++;
-
-    }while (n<0);
-    i=n;
-    while(i)
-        fac*=i++;
-    printf("faktoriel broja %d je %d",n, fac);
 }
