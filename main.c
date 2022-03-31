@@ -1,29 +1,18 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <math.h>
 
-int main()
-{
-	 int minimum=100, maximum=1000,najveci, jeLiDjeljivSBiloKojim, count=0, i, j;
-	 /* Inputs */
+int main(){
 
+    printf("1. Musko sisanje: 100kn\n");
+    printf("2. Izbrijavanje masinicom : 40kn\n");
+    printf("3. Sredjivanje brade: 50kn\n");
+    printf("4. Brijanje brade: 80kn\n");
 
-	 for(i=minimum; i<=maximum; i++)
-	 {
-		  jeLiDjeljivSBiloKojim = 0;
-		  for(j=2; j <= i/2; j++)
-		  {
-			   if(i%j==0)
-			   {
-				    jeLiDjeljivSBiloKojim=1;
-				    break;
-			   }
-		  }
-		  if(jeLiDjeljivSBiloKojim==0 && i>=2)
-		  {
-		      najveci=i;
-		   	count++;
-		  }
-	 }
-	 printf("\n Prime Count = %d\n Naj je veci %d", count,najveci);
-	 return(0);
+    int broj,sum=0;
+
+    while (broj){
+        scanf("%d",&broj);
+        sum+=broj==1?100:broj==2?40:broj==3?50:broj==4?80:0;
+    }
+    printf("%d",sum);
 }
