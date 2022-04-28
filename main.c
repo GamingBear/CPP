@@ -1,18 +1,28 @@
 #include <stdio.h>
 #include <math.h>
 
-int main(){
+int main(void)
+{
 
-    printf("1. Musko sisanje: 100kn\n");
-    printf("2. Izbrijavanje masinicom : 40kn\n");
-    printf("3. Sredjivanje brade: 50kn\n");
-    printf("4. Brijanje brade: 80kn\n");
+int a;
+int b;
+int c;
+int sum;
 
-    int broj,sum=0;
+printf("Unesi broj a: ");
+scanf("%d", &a);
 
-    while (broj){
-        scanf("%d",&broj);
-        sum+=broj==1?100:broj==2?40:broj==3?50:broj==4?80:0;
-    }
-    printf("%d",sum);
+printf("Unesi broj b: ");
+scanf("%d", &b);
+
+printf("Unesi broj c: ");
+scanf("%d", &c);
+
+for(int i=1; i<=c;i++){
+    sum=0;
+    for(int j=0; j<i; j++){
+         sum+=a;
+        a+=b;}
+}
+printf("%d\n",sum);
 }
