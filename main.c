@@ -1,28 +1,21 @@
 #include <stdio.h>
-#include <math.h>
+#include <stdlib.h>
 
-int main(void)
+int main()
 {
+int i;
+int x[6];
 
-int a;
-int b;
-int c;
-int sum;
+for(i=0;i<6;i++){
 
-printf("Unesi broj a: ");
-scanf("%d", &a);
-
-printf("Unesi broj b: ");
-scanf("%d", &b);
-
-printf("Unesi broj c: ");
-scanf("%d", &c);
-
-for(int i=1; i<=c;i++){
-    sum=0;
-    for(int j=0; j<i; j++){
-         sum+=a;
-        a+=b;}
+    printf("Unesi broj");
+    scanf("%d",&x[i]);
 }
-printf("%d\n",sum);
+
+printf("\n");
+
+for(i=0;i<6;i++){
+    printf("%d\n",x[i]);
+}
+    return 0;
 }
